@@ -1,0 +1,12 @@
+   h1{
+text-align: center;
+   }
+    .links{
+    background-color: white;
+    color: black;
+    font-size: 200%;
+    font-family: sans-serif;
+    margin-left: 50%;
+    border: 3px black solid;
+    text-align: center;
+   }

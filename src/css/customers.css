@@ -1,0 +1,13 @@
+.details{
+     margin-right: 30%; 
+    direction: rtl;
+}
+
+#title{
+margin-left: 50%;
+font-size: larger;
+text-decoration: underline;     }
+.hr{
+    border: 2px rgb(0, 0, 0) solid;
+
+    ;}
