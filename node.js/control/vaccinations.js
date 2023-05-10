@@ -47,7 +47,22 @@ const functions = {
             res.status(500).send("We have a problem connecting to database");
         }
     },
-
+    GetVaccinations: (req, res) => {
+        try {
+            const { vaccinationNum } = req.query;
+            let sql = `SELECT * from vaccinations`
+            con.query(sql, (err, result) => {
+                if (err) {
+                    console.log(result)
+                    res.status(400).send('wrong data');
+                } else {
+                    res.status(200).send(result);
+                }
+            })
+        } catch (err) {
+            res.status(500).send("We have a problem connecting to database");
+        }
+    },
     GetVaccinationsByClientID: (req, res) => {
         try {
             const { vaccinationNum } = req.query;
